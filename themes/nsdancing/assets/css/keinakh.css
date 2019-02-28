@@ -1,0 +1,23 @@
+body div.wpcf7 .form-group {
+  position: relative;
+}
+body div.wpcf7 form .ajax-loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  margin: 0 auto;
+  background-image: url("https://livechat.otpbank.com.ua/images/widget/popup-loader.gif");
+  background-size: 100%;
+}
+body div.wpcf7 .wpcf7-response-output {
+  display: none !important;
+}
+img,
+iframe {
+  transition: opacity 0.5s;
+}
+img[data-src],
+iframe[data-src] {
+  opacity: 0;
+}

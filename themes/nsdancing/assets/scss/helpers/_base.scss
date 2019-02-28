@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
+body, html {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #504c4c;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+body {
+  padding-top: 96px;
+}
+.content {
+  padding-top: rem(80px);
+}
+.home {
+  .content {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .content {
+    padding-top: 2.5rem;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    padding-top: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    padding-top: rem(30px);
+  }
+}
+

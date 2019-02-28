@@ -1,0 +1,130 @@
+.about-section {
+  margin-top: rem(70px);
+  .menu-content {
+    display: inline-block;
+    width: 100%;
+    max-width: 288px;
+  }
+}
+
+.about-text-section {
+  background-color: #fbfaf7;
+  margin-top: rem(80px);
+  padding: rem(32px) 0 rem(92px) 0;
+  .dynamic-content {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('../img/ns_about.png') top no-repeat;
+      background-size: 751px 972px;
+      z-index: 10;
+    }
+    > div:first-child {
+      margin-top: rem(307px);
+    }
+    .about-teacher-teacher-w {
+        max-width: 371px;
+    }
+    .about-teacher-teacher-m {
+      max-width: 366px;
+      float: right;
+    }
+  }
+  .quote {
+    &.quote-relative {
+      font-size: rem(38px);
+    }
+  }
+}
+
+.about-quote-section {
+  background: url('../img/bg_about.jpg') top no-repeat;
+  padding: rem(103px) 0 rem(103px) 0;
+  .third-title {
+    color: #eeeeee;
+    font-weight: 300;
+    z-index: 20;
+    position: relative;
+    margin-top: rem(70px);
+  }
+  svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: 0;
+    margin: auto;
+  }
+  .teacher-circle {
+    width: 184px;
+    height: 184px;
+    border: 1px solid #b80505;
+    padding: rem(5px);
+    border-radius: 50%;
+    .circle {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+    }
+    img {
+      position: absolute;
+      top: -14px;
+      left: 2px;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-text-section .dynamic-content:before {
+    display: none;
+  }
+  .about-text-section .dynamic-content > div:first-child {
+    margin-top: 0;
+  }
+  .about-text-section .dynamic-content .about-teacher-teacher-w,
+  .about-text-section .dynamic-content .about-teacher-teacher-m {
+    float: none;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .about-section {
+    margin-top: 1rem;
+    .menu-content {
+      margin-top: 2rem;
+    }
+  }
+  .about-text-section {
+    padding: 2rem 0;
+  }
+  .about-quote-section {
+    padding: 3rem 0;
+  }
+  .about-quote-section svg {
+    top: -22px;
+    width: 186px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text-section .dynamic-content:before {
+    display: block;
+    width: 300px;
+    height: 388px;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+  }
+  .about-text-section .quote.quote-relative {
+    font-size: 1.2rem!important;
+  }
+}

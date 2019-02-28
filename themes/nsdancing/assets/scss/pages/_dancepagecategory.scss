@@ -1,0 +1,166 @@
+.dance-page-category {
+  padding-bottom: rem(80px);
+  .img-dance {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    &.vertical-align {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .title.main-title {
+    margin-bottom: rem(40px);
+  }
+
+  .menu-content {
+    display: inline-block;
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .video-dance {
+    padding-top: rem(90px);
+  }
+}
+
+.decorative-block {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(-14deg, #fddca0 0%, #fddca0 1%, #ff9999 100%);
+    width: 100%;
+    height: 192px;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    margin: auto;
+  }
+  &.method-decoration {
+    &:before {
+      top: 70px;
+      left: -68%;
+    }
+  }
+}
+
+.section-our-methods {
+  .decorative-block {
+    &:before {
+      left: -42%;
+    }
+  }
+}
+
+.wedding-dance {
+  .video-iframe {
+    max-width: 371px;
+    height: 209px;
+  }
+  .video-iframe.alignleft {
+    margin: 0 3rem 0 0
+  }
+  .video-iframe.alignright {
+    margin: 0 0 0 3rem
+  }
+}
+
+.our-methods-page-item {
+  padding-bottom: rem(80px);
+  .title.main-title {
+    margin-bottom: 2.5rem;
+  }
+  .menu-content {
+    display: inline-block;
+    width: 100%;
+    max-width: 288px;
+  }
+  .circlce-img {
+    width: 288px;
+    height: 289px;
+    position: relative;
+    border: 1px solid #eba628;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+    img {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .dance-page-category {
+    .quote {
+      margin: 0 auto;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+    .decorative-block {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .our-methods-page-item .circlce-img {
+    float: none;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .our-methods-page-item,
+  .dance-page-category {
+    padding-bottom: 2rem;
+  }
+
+  .our-methods-page-item .menu-content {
+    margin-top: 2rem;
+  }
+
+  .decorative-block.method-decoration:before {
+    display: none;
+  }
+
+  .wedding-dance .video-iframe.alignleft,
+  .wedding-dance .video-iframe.alignright {
+    margin: 1rem auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .dance-page-category {
+    .title.main-title {
+      margin-bottom: 1.5rem;
+    }
+    .video-dance {
+      padding-top: 1rem;
+    }
+    .video-iframe {
+      margin-bottom: 1rem;
+    }
+  }
+  .quote.quote-relative {
+    margin-top: 1rem;
+    font-size: 0.7rem!important;
+  }
+
+  .our-methods-page-item .circlce-img {
+    width: 250px;
+    height: 250px;
+  }
+
+}

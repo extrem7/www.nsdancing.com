@@ -1,0 +1,304 @@
+.section-about {
+  padding-top: rem(140px);
+  .video-iframe {
+    display: inline-block;
+  }
+}
+
+.about-teacher {
+  padding-top: rem(147px);
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 192px;
+    width: 100%;
+    top: 240px;
+    background-image: linear-gradient(-14deg, #fddca0 0%, #fddca0 1%, #ff9999 100%);
+  }
+  .teacher-img {
+    width: 381px;
+    height: 551px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+  }
+  .teacher-img-mob {
+    display: none;
+  }
+  .title.second-title {
+    margin-top: 130px;
+  }
+  .decorative-separator {
+    max-width: 288px;
+    margin: 75px auto 20px auto;
+    &.icon-circle {
+      &:before {
+        background: $yellow url("../img/icons/quote-sm.svg") no-repeat center;
+        background-size: 16px 10px;
+      }
+    }
+  }
+  .about-teacher-info {
+    margin-top: 90px;
+    .button {
+      width: 100%;
+      max-width: 184px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.learn {
+  margin-top: rem(120px);
+  padding: rem(80px) 0 rem(40px) 0;
+  background: url('../img/decorative-bg.png') no-repeat center;
+  background-size: cover;
+  .second-title {
+    margin-bottom: rem(39px);
+  }
+  .list-marker {
+    margin-top: rem(30px);
+    counter-reset: section;
+    .marker-item {
+      position: relative;
+      margin-bottom: rem(37px);
+      padding-left: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:before {
+        counter-increment: section;
+        content: counters(section, "");
+        position: absolute;
+        font-size: 21px;
+        color: #fff;
+        font-style: italic;
+        line-height: 34px;
+        text-align: center;
+        top: 0;
+        z-index: 10;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #eba628;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        height: 100%;
+        width: 2px;
+        background-color: $red;
+        left: 17px;
+      }
+    }
+  }
+  .img-block {
+    .quote {
+      box-shadow: 0 4px 24px rgba(2, 2, 2, 0.15);
+      position: absolute;
+      top: 20px;
+      right: 0;
+    }
+    .quote:first-child {
+      width: 288px;
+      height: 288px;
+    }
+    .quote:nth-child(2) {
+      width: 178px;
+      height: 178px;
+      top: 250px;
+      left: 107px;
+    }
+    .quote:last-child {
+      width: 111px;
+      height: 110px;
+      top: 256px;
+      right: 49px;
+    }
+  }
+}
+
+.testimonial-section {
+  padding: rem(80px) 0 rem(40px) 0;
+  background-color: $red;
+  font-size: 1rem;
+  color: #ccc8c8;
+  .owl-carousel {
+    max-width: 580px;
+    width: 100%;
+    margin: rem(70px) auto 0 auto;
+    text-align: center;
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 68px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .testimonial-avatar {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    border: 1px solid #b80505;
+    margin-bottom: rem(12px);
+    background: no-repeat center;
+    background-size: cover;
+  }
+  .second-title {
+    color: #fff;
+  }
+  .testimonial-city {
+    text-shadow: 0 1px 0 rgba(2, 2, 2, 0.3);
+    margin: rem(10px) 0;
+  }
+  .testimonial-name {
+    text-shadow: 0 1px 0 rgba(2, 2, 2, 0.3);
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .testimonial-description {
+    font-style: italic;
+  }
+  .testimonial-readMore {
+    color: $yellow;
+    text-decoration: underline;
+    display: block;
+    margin-top: rem(30px);
+  }
+}
+
+.last-articles {
+  padding: 80px 0;
+  article {
+    font-size: rem(12px);
+    margin-top: rem(30px);
+    img {
+      display: block;
+      margin: 0 auto rem(15px);
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: rem(15px);
+    }
+    a {
+      text-decoration: underline;
+      color: $red;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-teacher {
+    .quote {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-teacher {
+    padding: 2.5rem 0;
+    background-image: linear-gradient(-14deg, #fddca0 0%, #fddca0 1%, #ff9999 100%);
+    .title.second-title {
+      margin-top: 0;
+    }
+    .teacher-img {
+      display: none;
+    }
+    .decorative-separator {
+      margin: 35px auto 20px auto;
+    }
+    .teacher-img-mob {
+      display: block;
+      float: left;
+      margin-right: 1rem;
+    }
+    .quote {
+      margin: 0 auto;
+    }
+    .about-teacher-info {
+      margin: 20px 0;
+    }
+    &:before {
+      display: none;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .section-about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .video-iframe {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .learn {
+    h4 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .last-articles {
+    padding: 2rem 0;
+  }
+
+  .section-about {
+    .video-iframe {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .testimonial-section {
+    padding: 2.5rem 0;
+    .owl-carousel {
+      .owl-nav {
+        button.owl-prev {
+          left: 0;
+        }
+        button.owl-next {
+          right: 0;
+        }
+      }
+    }
+    .testimonial-name {
+      font-size: 18px;
+    }
+    .owl-carousel {
+      margin: 2rem auto 0 auto;
+    }
+  }
+
+  .learn {
+    padding: 2rem 0;
+    margin-top: 0;
+    .second-title {
+      margin-bottom: 1rem;
+    }
+    .list-marker {
+      .marker-item {
+        font-size: 0.875rem;
+        padding-left: 45px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
